@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+
+.messagesInput{
+    min-width: 600px;
+    width: 80vw;
+    display: inline-flex;
+    margin: auto;
+    text-align: center;
+}
+
+.massagesList{
+    background-color: #cccccc;
+    min-height: 300px;
+    max-height: 600px;
+    overflow: scroll;
+    margin: 10vh 0;
+}
+
+.messagesInput button{
+    color: dodgerblue;
+}

@@ -1,0 +1,37 @@
+<head>
+  <title>GeoTest</title>
+</head>
+
+<body>
+  <h1>Meteor Exemple</h1>
+  <b>Messages List , This will be sync across all connected devices and even the DB.</b>
+
+  <section class="massagesList">
+      {{> messages}}
+  </section>
+<section class="messagesInput">
+    <input type="text" placeholder="type a message a click send !!">
+    <button>Send</button>
+</section>
+
+
+</body>
+
+
+
+<!--this is a template : messages -->
+
+<template name="messages">
+    {{#each messages}}
+
+        {{> message}}
+
+    {{/each}}
+</template>
+
+
+
+<!--this is a template : message -->
+<template name="message">
+<h6>{{message}}</h6>
+</template>
